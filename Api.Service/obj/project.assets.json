@@ -5269,11 +5269,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.Service\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.Service\\Service.csproj",
+      "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj",
       "packagesPath": "C:\\Users\\acerte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.Service\\obj\\",
+      "outputPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5293,11 +5293,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.Data\\Data.csproj"
+            "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj"
             },
-            "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.Domain\\Domain.csproj"
+            "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
             }
           }
         }

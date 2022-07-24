@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/zmszvF4sPlc0Daqc4w/ZGjiv+3BrBf9copobgtPSH2LzGptbt9uR35IW3ENyqWLxDNznpO7baS+je4sxSvKpQ==",
+  "dgSpecHash": "e5+mjlRihQaxg+9NCfI44rTcBQ9im1GdQuv3OI8ux9kQZ4e4XsJ3c5DMST+gYV1ehg2FQ6Cxo5nPBJIhzPexqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.Service\\Service.csproj",
+  "projectFilePath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acerte\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\acerte\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
