@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kad6vbY2wnNNPxChbFDvnaLOUixEHGmVMckfa3ke/s+3yGQ6oV+S2URYnIkG3OkXt6eQ6kJlreNLGynXFykVfA==",
+  "dgSpecHash": "KD7QQHe2fRqR0ot87e53L2Io6a1KZcCEYPlh0QEzQaVTWvrpYdjcWiYR2VmCccMDSdtKDYHozdqI+Ist4JR9dQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\API-.NETCore\\src\\Api.CrossCutting\\CrossCutting.csproj",
+  "projectFilePath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acerte\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\acerte\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

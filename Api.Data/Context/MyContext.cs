@@ -9,6 +9,8 @@ namespace Api.Data.Context
         private string connectionString;
 
         public DbSet<UserEntity> Users { get; set; }
+        public DbSet<ItemEntity> Items { get; set; }
+        public DbSet<ReservationEntity> Reservations { get; set; }
 
         public MyContext (DbContextOptions<MyContext> options): base(options) {}
 
