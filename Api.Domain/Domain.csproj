@@ -5,6 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Interfaces\Services\NovaPasta1\**" />
+    <Compile Remove="Interfaces\Services\NovaPasta\**" />
+    <EmbeddedResource Remove="Interfaces\Services\NovaPasta1\**" />
+    <EmbeddedResource Remove="Interfaces\Services\NovaPasta\**" />
+    <None Remove="Interfaces\Services\NovaPasta1\**" />
+    <None Remove="Interfaces\Services\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\ItemReservation.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" />
   </ItemGroup>
 

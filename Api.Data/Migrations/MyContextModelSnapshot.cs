@@ -41,6 +41,47 @@ namespace Data.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("double");
 
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<double>("ValueFee")
+                        .HasColumnType("double");
+
+                    b.Property<DateTime?>("createAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.ItemReservationEntity", b =>
+                {
+                    b.Property<int?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("AmountDemanded")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<bool>("Fee")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("IdMaterialOrig")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("PathPhoto")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("double");
+
                     b.Property<Guid?>("ReservationEntityId")
                         .HasColumnType("char(36)");
 
@@ -57,7 +98,7 @@ namespace Data.Migrations
 
                     b.HasIndex("ReservationEntityId");
 
-                    b.ToTable("Items");
+                    b.ToTable("ItemReservations");
                 });
 
             modelBuilder.Entity("Api.Domain.Entities.ReservationEntity", b =>
@@ -69,36 +110,37 @@ namespace Data.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("AddressNumber")
+                    b.Property<int?>("AddressNumber")
                         .HasColumnType("int");
 
-                    b.Property<int>("DeliveryMethod")
-                        .HasColumnType("int");
+                    b.Property<string>("DeliveryMethod")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<int?>("FlagCardPayment")
                         .HasColumnType("int");
 
+                    b.Property<string>("NameClient")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("Neighborhood")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<bool>("Status")
-                        .HasColumnType("tinyint(1)");
+                    b.Property<string>("PhoneNumberClient")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("TipePayment")
+                    b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.Property<string>("TipePayment")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<DateTime?>("UpdateAt")
                         .HasColumnType("datetime(6)");
-
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("char(36)");
 
                     b.Property<DateTime?>("createAt")
                         .HasColumnType("datetime(6)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Reservations");
                 });
@@ -138,18 +180,11 @@ namespace Data.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("Api.Domain.Entities.ItemEntity", b =>
+            modelBuilder.Entity("Api.Domain.Entities.ItemReservationEntity", b =>
                 {
                     b.HasOne("Api.Domain.Entities.ReservationEntity", null)
                         .WithMany("Itens")
                         .HasForeignKey("ReservationEntityId");
-                });
-
-            modelBuilder.Entity("Api.Domain.Entities.ReservationEntity", b =>
-                {
-                    b.HasOne("Api.Domain.Entities.UserEntity", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using Api.Domain.Entities;
-using Api.Domain.Interfaces.Services.User;
+using Api.Domain.Interfaces.Services.Item;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 //using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Api.Application.Controllers
 {
@@ -13,12 +17,12 @@ namespace Api.Application.Controllers
     [ApiController]
     public class ItemController : ControllerBase
     {
-        private IUserService _service;
-        public ItemController(IUserService service)
+        private IItemService _service;
+        public ItemController(IItemService service)
         {
             _service = service;
         }
-        [Authorize("Bearer")]
+        //[Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
@@ -59,9 +63,9 @@ namespace Api.Application.Controllers
             }
 
         }
-        [Authorize("Bearer")]
+        //[Authorize("Bearer")]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserEntity user)
+        public async Task<ActionResult> Post([FromForm] IFormFile photo, [FromForm] string Item)
         {
             if (!ModelState.IsValid)
             {
@@ -69,9 +73,26 @@ namespace Api.Application.Controllers
             }
             try
             {
-                var result = await _service.Post(user);
+
+                if (!Directory.Exists(Directory.GetCurrentDirectory() + "\\temp\\wb\\itens\\images\\"))
+                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\temp\\wb\\itens\\images\\");
+
+                var ItemOk = JsonConvert.DeserializeObject<ItemEntity>(Item);
+                var result = await _service.Post(ItemOk);
                 if (result != null)
                 {
+                    var type = photo.ContentType.Split('/')[1];
+                    var filename = photo.FileName.Split('.')[0];
+                    var path = "\\temp\\wb\\itens\\images\\" + result.Id + "." + type;
+                    var pathUpdate = "/temp/wb/itens/images/" + result.Id + "." + type;
+                    using (FileStream filestream = System.IO.File.Create(Directory.GetCurrentDirectory() + path))
+                    {
+                        await photo.CopyToAsync(filestream);
+                        filestream.Flush();
+                    }
+                    result.PathPhoto = pathUpdate;
+                    await _service.Put(ItemOk);
+
                     return Created(new Uri(Url.Link("GetWithId", new { id = result.Id })), result); //200 requisição bem sucedida, CRIOU ALGO.
                 }
                 else
@@ -88,7 +109,7 @@ namespace Api.Application.Controllers
         }
         [Authorize("Bearer")]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserEntity user)
+        public async Task<ActionResult> Put([FromBody] ItemEntity item)
         {
             if (!ModelState.IsValid)
             {
@@ -97,7 +118,7 @@ namespace Api.Application.Controllers
 
             try
             {
-                var result = await _service.Put(user);
+                var result = await _service.Put(item);
 
                 if (result != null)
                 {

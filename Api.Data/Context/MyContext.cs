@@ -11,6 +11,7 @@ namespace Api.Data.Context
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<ItemEntity> Items { get; set; }
         public DbSet<ReservationEntity> Reservations { get; set; }
+        public DbSet<ItemReservationEntity> ItemReservations { get; set; }
 
         public MyContext (DbContextOptions<MyContext> options): base(options) {}
 

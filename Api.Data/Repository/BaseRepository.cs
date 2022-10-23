@@ -12,11 +12,13 @@ namespace Api.Data.Repository
     {
         protected readonly MyContext _context;
         private DbSet<T> _dataSet;
+        private DbSet<ReservationEntity> _dataSetReservations;
 
         public BaseRepository(MyContext context)
         {
             _context = context;
             _dataSet = context.Set<T>();
+            _dataSetReservations = context.Set<ReservationEntity>();
         }
         public async Task<bool> DeleteAsync(Guid id)
         {
@@ -83,6 +85,21 @@ namespace Api.Data.Repository
             try
             {
                 return await _dataSet.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<IEnumerable<ReservationEntity>> SelectAsyncWithItens()
+        {
+            try
+            {
+                var query = _dataSetReservations
+                    .Include(x => x.Itens)
+                    .AsNoTracking();
+                return await query.ToListAsync();
             }
             catch (Exception ex)
             {

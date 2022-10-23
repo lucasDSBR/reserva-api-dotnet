@@ -2,7 +2,7 @@
 using System.Net;
 using System.Threading.Tasks;
 using Api.Domain.Entities;
-using Api.Domain.Interfaces.Services.User;
+using Api.Domain.Interfaces.Services.Reservation;
 using Microsoft.AspNetCore.Authorization;
 //using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
@@ -13,12 +13,12 @@ namespace Api.Application.Controllers
     [ApiController]
     public class ReservationController : ControllerBase
     {
-        private IUserService _service;
-        public ReservationController(IUserService service)
+        private IReservationService _service;
+        public ReservationController(IReservationService service)
         {
             _service = service;
         }
-        [Authorize("Bearer")]
+        //Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
@@ -28,7 +28,7 @@ namespace Api.Application.Controllers
             }
             try
             {
-                return Ok(await _service.GetAll()); //200 requisição bem sucedida.
+                return Ok(await _service.GetAllWithItens()); //200 requisição bem sucedida.
 
             }
             catch (ArgumentException ex)
@@ -59,9 +59,9 @@ namespace Api.Application.Controllers
             }
 
         }
-        [Authorize("Bearer")]
+        //[Authorize("Bearer")]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserEntity user)
+        public async Task<ActionResult> Post([FromBody] ReservationEntity reservation)
         {
             if (!ModelState.IsValid)
             {
@@ -69,7 +69,7 @@ namespace Api.Application.Controllers
             }
             try
             {
-                var result = await _service.Post(user);
+                var result = await _service.Post(reservation);
                 if (result != null)
                 {
                     return Created(new Uri(Url.Link("GetWithId", new { id = result.Id })), result); //200 requisição bem sucedida, CRIOU ALGO.
@@ -86,9 +86,9 @@ namespace Api.Application.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message); //500 Internal Error -- Erro interno do servidor.
             }
         }
-        [Authorize("Bearer")]
+        //[Authorize("Bearer")]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserEntity user)
+        public async Task<ActionResult> Put([FromBody] ReservationEntity user)
         {
             if (!ModelState.IsValid)
             {

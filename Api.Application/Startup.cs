@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Api.CrossCutting.DependencyInjectable;
@@ -8,10 +9,12 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -40,6 +43,7 @@ namespace application
                     .Configure(tokenConfigurations);
             services.AddSingleton(tokenConfigurations);
 
+            services.AddCors();
 
             services.AddAuthentication(authOptions => 
             {
@@ -121,6 +125,13 @@ namespace application
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(c =>
+            {
+                c.AllowAnyHeader();
+                c.AllowAnyMethod();
+                c.AllowAnyOrigin();
+            });
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
@@ -130,6 +141,15 @@ namespace application
 
             app.UseRouting();
 
+            app.UseStaticFiles(); // For the wwwroot folder
+
+
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), @"temp")),
+                RequestPath = new PathString("/temp")
+            });
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Application\\application.csproj": {}
+    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Application\\application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Application\\application.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Application\\application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Application\\application.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Application\\application.csproj",
         "projectName": "application",
-        "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Application\\application.csproj",
-        "packagesPath": "C:\\Users\\acerte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Application\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Application\\application.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acerte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,14 +32,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj"
               },
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
               },
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -68,7 +69,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,24 +82,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
-        "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\acerte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.CrossCutting\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.CrossCutting\\CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acerte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,14 +114,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Data\\Data.csproj"
               },
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
               },
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -144,7 +147,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -153,24 +157,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\acerte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acerte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,8 +189,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -227,7 +232,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -236,24 +242,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\acerte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acerte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -290,7 +297,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -299,24 +307,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\acerte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Service\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acerte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -330,11 +339,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Data\\Data.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Data\\Data.csproj"
               },
-              "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\acerte\\Desktop\\git\\FREELANCERS\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
+              "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\GIT\\Projetos_pessoais\\reserva-api-dotnet\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -354,7 +363,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -363,7 +373,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
